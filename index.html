@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img src="./img/ahacoffee.png" alt="" />
+      <h2>Booking</h2>
+    </div>
+    <div class="booking-table">
+      <h3>Table</h3>
+      <div class="tables">
+        <button class="table" id="1">1</button>
+        <button class="table" id="2">2</button>
+        <button class="table" id="3">3</button>
+        <button class="table" id="4">4</button>
+        <button class="table" id="5">5</button>
+        <button class="table" id="6">6</button>
+        <button class="table" id="7">7</button>
+        <button class="table" id="8">8</button>
+        <button class="table" id="9">9</button>
+        <button class="table" id="10">10</button>
+        <button class="table" id="11">11</button>
+        <button class="table" id="12">12</button>
+        <button class="table" id="13">13</button>
+        <button class="table" id="14">14</button>
+        <button class="table" id="15">15</button>
+        <button class="table" id="16">16</button>
+        <button class="table" id="17">17</button>
+        <button class="table" id="18">18</button>
+        <button class="table" id="19">19</button>
+        <button class="table" id="20">20</button>
+        <button class="table" id="21">21</button>
+        <button class="table" id="22">22</button>
+        <button class="table" id="23">23</button>
+        <button class="table" id="24">24</button>
+        <button class="table" id="25">25</button>
+      </div>
+    </div>
+    <div class="menu-popup hide">
+      <div class="drink-list">
+        <div class="drink-list__header">
+          <h1>Drink List</h1>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="categories">
+          <div class="category">
+            <h3 class="category-title">Vietnamese Coffee</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Black Coffee</h3>
+                <h4 class="item-price">30.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Black Coffee Special</h3>
+                <h4 class="item-price">30.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Milked Coffee</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Milked Coffee Special</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">White Coffee</h3>
+                <h4 class="item-price">38.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Coconut Coffee</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">AHA Coffee With Ice-Cream</h3>
+                <h4 class="item-price">65.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Italian Coffee</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Espresso</h3>
+                <h4 class="item-price">30.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Double Espresso</h3>
+                <h4 class="item-price">40.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Americano</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Cappuccino</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Latte</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Chocolate Latte</h3>
+                <h4 class="item-price">48.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Tea & Infusion</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Black Tea</h3>
+                <h4 class="item-price">30.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Black Tea With Fresh Milk</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Jasmine Tea With Tropical Fruits</h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Pink Guava Tea</h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Jasmine Tea With Lychee</h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">
+                  Black Tea With Lotus Nuts And Milk Foam
+                </h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Black Tea With Peach</h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Black Tea With Orange And Lemongrass</h3>
+                <h4 class="item-price">53.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Juices</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Lemon Juice</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Passion Fruit Juice</h3>
+                <h4 class="item-price">39.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Guava Juice</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Watermelon Juice</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Pineapple Juice</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Coconut Juice</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Orange Juice</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Apple Juice</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Pomelo Juice</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Fruit Smoothies</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Mango Smoothies</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Coconut Smoothies</h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Snowy Lemon Juice</h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Mixed Fruit With Yogurt</h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Ice Blended</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Ice Blended Matcha</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Chocolate & Mint</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Hazelnut Ice Blended Coffee</h3>
+                <h4 class="item-price">53.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Cookie Choco</h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Smoothies With Ice-Cream</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">
+                  Strawberry Smoothies With Mango Ice-Cream
+                </h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">
+                  Raspberry Smoothies With Vanilla Ice-Cream
+                </h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Mixed Fruit With Coconut Ice-Cream</h3>
+                <h4 class="item-price">55.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Scoops Ice-Cream</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">1 Scoop Of Ice-Cream</h3>
+                <h4 class="item-price">28.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Swan Lake</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Ship Of Love</h3>
+                <h4 class="item-price">69.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Coconut Paradise</h3>
+                <h4 class="item-price">85.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Scoops Ice-Cream</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Other Drinks</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Yogurt With Ice</h3>
+                <h4 class="item-price">30.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Yogurt With Coffee & Ice</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Yogurt With Chocolate & Ice</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Yogurt With Passion Juice & Ice</h3>
+                <h4 class="item-price">33.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Chocolate</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Latte Chocolate</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Beers & Soft Drinks</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Saigon Beer</h3>
+                <h4 class="item-price">30.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Soft Drink</h3>
+                <h4 class="item-price">25.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Sunflower Núts</h3>
+                <h4 class="item-price">20.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Summer Drinks</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">Oolong Milk Tea With Black Sugar</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Oolong Matcha Milk Tea</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Centella With Mung Beans</h3>
+                <h4 class="item-price">39.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Centella Coconut</h3>
+                <h4 class="item-price">45.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Mung Beans Coconut</h3>
+                <h4 class="item-price">49.000</h4>
+              </div>
+            </div>
+          </div>
+          <div class="category">
+            <h3>Winter Drinks</h3>
+            <div class="items">
+              <div class="item">
+                <h3 class="item-title">
+                  Ginger Tea With Winter Melon Syrup And Lotus Seeds
+                </h3>
+                <h4 class="item-price">39.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Ginger Tea With Lychee Fruits</h3>
+                <h4 class="item-price">39.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Chocolate With Butter Cookies</h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">
+                  Chocolate With Hazelnut And Coconut Milk
+                </h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+              <div class="item">
+                <h3 class="item-title">Matcha Latte Cookies</h3>
+                <h4 class="item-price">43.000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bill-popup hide">
+      <div class="bill">
+        <div class="bill-header">
+          <div class="logo">
+            <img src="./img/ahacoffee.png" alt="" />
+            <h1>AHA COFFEE</h1>
+          </div>
+          <p>Address: Ha Dong, Ha Noi</p>
+          <h1>INVOICE</h1>
+          <h3>
+            Table:
+            <span class="table-number">1</span>
+          </h3>
+        </div>
+        <div class="detail">
+          <form action="">
+            <table>
+              <thead>
+                <tr>
+                  <th>Desc</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                  <th class="other">Other</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </form>
+        </div>
+        <div class="vat">
+          <h3 class="total">Total: <span>0</span><sup>đ</sup></h3>
+        </div>
+        <div class="bill-footer">
+          <button onclick="setTableData()" class="print">Export</button>
+        </div>
+      </div>
+    </div>
+    <div class="ordered-table hide">
+      <div class="bill">
+        <div class="bill-header">
+          <div class="logo">
+            <img src="./img/ahacoffee.png" alt="" />
+            <h1>AHA COFFEE</h1>
+            <i class="fas fa-times"></i>
+          </div>
+
+          <p>Address: Ha Dong, Ha Noi</p>
+          <h1>INVOICE</h1>
+          <h3>
+            Table:
+            <span class="table-number"></span>
+          </h3>
+        </div>
+        <div class="detail">
+          <form action="">
+            <table>
+              <thead>
+                <tr>
+                  <th>Desc</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot class="vat"></tfoot>
+            </table>
+          </form>
+        </div>
+        <div class="vat">
+          <h3 class="total">Total: <span>0</span><sup>đ</sup></h3>
+        </div>
+        <div class="bill-footer">
+          <button onclick="deleteData()" class="done">Done</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+</html>

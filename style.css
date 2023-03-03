@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: auto;
+  font-family: sans-serif;
+}
+:root {
+  --primary1: #019f54;
+  --primary2: #4d2519;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary2);
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+}
+.header img {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+.header h2 {
+  color: azure;
+}
+.main {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row;
+}
+.booking-table {
+  margin-top: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  border: 1px solid #333;
+  border-radius: 50px;
+}
+.booking-table > h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.tables {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 20px;
+  color: aliceblue;
+  width: 500px;
+}
+.table {
+  padding: 10px 5px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+.tables button {
+  background-color: green;
+  color: white;
+}
+
+.tables button:hover {
+  background-color: red;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-popup {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ordered-table {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000099;
+}
+.ordered-table .bill {
+  width: 600px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 20px;
+  left: 30%;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.ordered-table .detail {
+  width: 400px;
+}
+.drink-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  width: 1000px;
+  height: 700px;
+  overflow: auto;
+  background-color: whitesmoke;
+}
+.drink-list__header {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  width: 1000px;
+  z-index: 1;
+  background-color: #019f54;
+  align-items: center;
+}
+.drink-list__header > h1 {
+  text-transform: uppercase;
+}
+.drink-list__header > i {
+  padding: 5px;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.drink-list__header > i:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.drink {
+  border: none;
+  background-color: initial;
+}
+.drink:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+.category > h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.item:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+.items {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px 40px;
+  gap: 5px 20px;
+  position: relative;
+}
+.item {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  border-bottom: 1px dotted #333;
+}
+
+.item-title {
+  width: fit-content;
+}
+.item-price {
+  color: red;
+}
+.categories {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0 10px;
+  margin-top: 60px;
+}
+.category {
+  border-bottom: 1px solid #333;
+  background-color: blanchedalmond;
+  margin: 10px 0;
+}
+h3,
+h4 {
+  font-weight: lighter;
+}
+.category > h3 {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.hide {
+  display: none;
+}
+.bill-popup .bill {
+  position: fixed;
+  width: 450px;
+  right: 10px;
+  top: 50px;
+  background-color: aliceblue;
+}
+.bill-header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bill-header img {
+  width: 50px;
+}
+.detail {
+  height: 340px;
+  overflow: auto;
+}
+thead {
+  position: absolute;
+  top: 190px;
+  background-color: black;
+  color: white;
+  padding-right: 10px;
+}
+
+.detail,
+.vat {
+  margin-left: 30px;
+  padding: 10px;
+}
+.vat {
+  width: 340px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.bill-footer {
+  text-align: right;
+  padding: 20px;
+  margin-right: 30px;
+}
+.done,
+.print {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+.done {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+.print {
+  background-color: yellow;
+  font-weight: bold;
+}
+.done:hover,
+.print:hover {
+  background-color: #4d2519;
+  color: white;
+  cursor: pointer;
+}
+
+.total {
+  text-align: right;
+}
+th:first-child,
+td:first-child {
+  width: 200px;
+  overflow: hidden;
+}
+th:nth-child(3) {
+  width: 80px;
+}
+td:nth-child(3) {
+  display: flex;
+  width: 80px;
+}
+.ordered-table td:nth-child(3) {
+  display: flex;
+  width: 90px;
+}
+th {
+  padding: 5px;
+  border-bottom: 1px dotted #333;
+  border-left: 1px solid white;
+}
+td {
+  padding: 5px;
+  border-left: 1px solid rgb(0, 0, 0);
+}
+tr {
+  border-bottom: 1px dotted #333;
+}
+td > i {
+  width: 10px;
+  height: 12px;
+  font-size: 8px;
+  padding: 2px;
+  background-color: gray;
+  border-radius: 2px;
+  color: white;
+}
+td:nth-child(2),
+th:nth-child(2) {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fa-solid:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+.fa-minus {
+  background-color: red;
+}
+.fa-plus {
+  background-color: green;
+}
+td > input {
+  width: 30px;
+}
+tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ordered-table .fa-times {
+  margin-left: 100px;
+  margin-right: -150px;
+  margin-top: -20px;
+  padding: 5px;
+  height: fit-content;
+}
+.ordered-table .fa-times:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
